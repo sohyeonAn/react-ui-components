@@ -6,6 +6,7 @@ import TextField from '@/components/TextField'
 import Alert from '@/components/Alert'
 import { useAlertContext } from '@/contexts/AlertContext'
 import FixedBottomButton from '@/components/FixedBottomButton'
+import Skeleton from '@/components/Skeleton'
 
 function App() {
   const { open } = useAlertContext()
@@ -82,6 +83,12 @@ function App() {
         helpMessage={'비밀번호는 8글자 이상 입력해주세요.'}
         type="password"
       />
+
+      <br />
+      <br />
+
+      {/* Skeleton */}
+      <Skeleton width={220} height={160} />
 
       <br />
       <br />
