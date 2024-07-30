@@ -4,10 +4,13 @@ import App from './App.tsx'
 import './index.css'
 import { Global } from '@emotion/react'
 import globalStyles from './styles/global.ts'
+import { AlertContextProvider } from './contexts/AlertContext.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <Global styles={globalStyles} />
-    <App />
+    <AlertContextProvider>
+      <App />
+    </AlertContextProvider>
   </React.StrictMode>,
 )
