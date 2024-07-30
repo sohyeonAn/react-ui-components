@@ -57,6 +57,16 @@ function App() {
       <br />
       <br />
 
+      {/* Button Group */}
+      <Button.Group title="버튼 그룹">
+        <Button>하나</Button>
+        <Button>둘</Button>
+        <Button>셋</Button>
+      </Button.Group>
+
+      <br />
+      <br />
+
       {/* Input */}
       <Input placeholder="입력" aria-invalid={false} />
       <Input aria-invalid={true} />
