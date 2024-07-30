@@ -18,7 +18,7 @@ function Alert({
   open,
   title,
   description,
-  buttonLabel,
+  buttonLabel = '확인',
   onButtonClick,
 }: AlertProps) {
   if (open === false) return null
