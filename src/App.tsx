@@ -5,6 +5,7 @@ import Input from '@/components/Input'
 import TextField from '@/components/TextField'
 import Alert from '@/components/Alert'
 import { useAlertContext } from '@/contexts/AlertContext'
+import FixedBottomButton from '@/components/FixedBottomButton'
 
 function App() {
   const { open } = useAlertContext()
@@ -96,6 +97,9 @@ function App() {
       >
         Alert 열기
       </Button>
+
+      {/* Fixed Bottom Button */}
+      <FixedBottomButton label="바닥 버튼" onClick={() => {}} />
     </div>
   )
 }
