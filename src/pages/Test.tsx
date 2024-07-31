@@ -7,14 +7,16 @@ import { useAlertContext } from '@/contexts/AlertContext'
 import FixedBottomButton from '@/components/FixedBottomButton'
 import Skeleton from '@/components/Skeleton'
 import ProgressBar from '@/components/ProgressBar'
+import ScrollProgressBar from '@/components/ScrollProgressBar'
 
 function Test() {
   const { open } = useAlertContext()
 
   return (
     <div>
-      {/* ProgressBar */}
-      <ProgressBar progress={0.75} />
+      {/* ScrollProgressBar */}
+      <ScrollProgressBar color="green" marginTop={60} />
+
       <br />
       <br />
 
@@ -88,6 +90,12 @@ function Test() {
         helpMessage={'비밀번호는 8글자 이상 입력해주세요.'}
         type="password"
       />
+
+      <br />
+      <br />
+
+      {/* ProgressBar */}
+      <ProgressBar progress={0.75} />
 
       <br />
       <br />
