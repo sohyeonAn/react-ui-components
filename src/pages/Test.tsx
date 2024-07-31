@@ -6,12 +6,18 @@ import Alert from '@/components/Alert'
 import { useAlertContext } from '@/contexts/AlertContext'
 import FixedBottomButton from '@/components/FixedBottomButton'
 import Skeleton from '@/components/Skeleton'
+import ProgressBar from '@/components/ProgressBar'
 
 function Test() {
   const { open } = useAlertContext()
 
   return (
     <div>
+      {/* ProgressBar */}
+      <ProgressBar progress={0.75} />
+      <br />
+      <br />
+
       {/* Text */}
       <Text typography="t1" display="block" color="red">
         t1
