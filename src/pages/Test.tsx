@@ -8,6 +8,7 @@ import FixedBottomButton from '@/components/FixedBottomButton'
 import Skeleton from '@/components/Skeleton'
 import ProgressBar from '@/components/ProgressBar'
 import ScrollProgressBar from '@/components/ScrollProgressBar'
+import Tag from '@/components/Tag'
 
 function Test() {
   const { open } = useAlertContext()
@@ -128,6 +129,20 @@ function Test() {
         Alert 열기
       </Button>
 
+      <br />
+      <br />
+
+      {/* Tag */}
+      <Tag>파랑</Tag>
+      <Tag backgroundColor="green">초록</Tag>
+      <Tag backgroundColor="red">빨강</Tag>
+      <Tag backgroundColor="grey">회색</Tag>
+      <Tag backgroundColor="black">검정</Tag>
+      <Tag color="green" backgroundColor="black">
+        초록 글자
+      </Tag>
+
+      <div style={{ height: '60px' }} />
       {/* Fixed Bottom Button */}
       <FixedBottomButton label="바닥 버튼" onClick={() => {}} />
     </div>
